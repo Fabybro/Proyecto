@@ -1,0 +1,81 @@
+body {
+    background-color: rgba(209, 176, 209, 0.288);
+    display: inline-grid;
+    place-items: center;
+    width: 100%;
+    font-family: 'Merriweather', serif;
+}
+
+.simon {
+    position: relative;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buttonContainer {
+    display: inline-grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    transform: rotate(45deg);
+}
+
+.square {
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.square:active,
+.active {
+    filter: brightness(125%);
+}
+
+.red {
+    background-color: #EE6352;
+}
+
+.blue {
+    background-color: #08B2E3;
+}
+
+.green {
+    background-color: #57A773;
+}
+
+.yellow {
+    background-color: #FFDF64;
+}
+
+#startButton {
+    width: 120px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #4e7ea8;
+    padding: 10px;
+}
+
+#startButton:disabled {
+    background-color: #a38e6a;
+}
+
+.title {
+    width: min-content;
+    color: brown;
+    padding: 10px;
+    position: relative;
+}
+
+.winner {
+    animation: spin 3s ease-in-out;
+}
+
+@keyframes spin { 
+    100% { transform:rotate(180deg) } }
